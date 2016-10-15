@@ -1,7 +1,6 @@
 1
 Module 3 Coding Assignment
-2
-=======
+=============================
 3
 [Click here to SIGN UP for the ***Single Page Web Applications with AngularJS*** course on Coursera](https://www.coursera.org/learn/single-page-web-apps-with-angularjs). It's FREE!
 4
