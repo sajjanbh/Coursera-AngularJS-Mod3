@@ -72,4 +72,5 @@ found-items ul li span {
 }
 found-items ul li button {
   float: right;
+  clear: both;
 }
