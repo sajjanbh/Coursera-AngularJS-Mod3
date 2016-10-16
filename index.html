@@ -23,7 +23,7 @@
     <!-- <ul><li ng-repeat="item in narrow.found">{{ item.description }} </li></ul> -->
     <!-- found-items should be implemented as a component -->
     <found-items title="{{narrow.title}}" items="narrow.found" on-remove="narrow.removeItem(index)" ng-if="narrow.found.length > 0"></found-items>
-    <div ng-if="narrow.found.length < 1 ">Nothing found</div>
+    <div ng-if="narrow.found.length == 0" style="color: red;">Nothing found</div>
   </div>
 
 </body>
