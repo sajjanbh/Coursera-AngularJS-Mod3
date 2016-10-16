@@ -50,3 +50,23 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+
+found-items {
+  display: block;
+  border: 1px solid #ddd;
+  margin: 70px;
+}
+
+found-items ul li {
+  margin-bottom: 10px;
+}
+
+found-items ul li span {
+  padding: 6px 4px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  margin-right: 10px;
+}
+found-items ul li button {
+  float: right;
+}
