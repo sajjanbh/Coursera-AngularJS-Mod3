@@ -50,7 +50,7 @@ function NarrowItDownController(MenuSearchService, $timeout) {
         }
       }, 2000);
     } else {
-      arrow.message = "Nothing Found";
+      narrow.message = "Nothing Found";
     }
   }
 
