@@ -31,6 +31,7 @@ NarrowItDownController .$inject = ['MenuSearchService', '$timeout'];
 function NarrowItDownController(MenuSearchService, $timeout) {
   var narrow = this;
   narrow.searchTerm = "";
+  narrow.message = "";
   narrow.found = MenuSearchService.getItems();
 
   var origTitle = "Found Items";
@@ -45,6 +46,7 @@ function NarrowItDownController(MenuSearchService, $timeout) {
         console.log(narrow.found);
         narrow.title = origTitle + " (" + narrow.found.length + " items )";
       } else {
+        narrow.message = "Nothing Found";
         console.log("Nothing Found!");
       }
     }, 1000);
