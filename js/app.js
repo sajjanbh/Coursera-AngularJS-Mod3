@@ -41,8 +41,12 @@ function NarrowItDownController(MenuSearchService, $timeout) {
   narrow.getMatchedMenuItems = function () {
     MenuSearchService.getMatchedMenuItems(narrow.searchTerm);
     $timeout(function () {
-      console.log(narrow.found);
-      narrow.title = origTitle + " (" + narrow.found.length + " items )";
+      if (narrow.found.length > 0) {
+        console.log(narrow.found);
+        narrow.title = origTitle + " (" + narrow.found.length + " items )";
+      } else {
+        console.log("Nothing Found!");
+      }
     }, 1000);
   }
 
