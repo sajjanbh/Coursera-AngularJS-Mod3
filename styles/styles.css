@@ -58,7 +58,10 @@ found-items {
 }
 
 found-items ul li {
-  margin-bottom: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  border: 1px solid #eee;
 }
 
 found-items ul li span {
