@@ -40,6 +40,7 @@ function NarrowItDownController(MenuSearchService, $timeout) {
   // Function triggered on clicking "Narrow It Down" button
   // Pulls searchTerm from input field and fetches matching items containing searchTerm in their description
   narrow.getMatchedMenuItems = function () {
+    narrow.found.length = 0;
     if (narrow.searchTerm != "") {
       MenuSearchService.getMatchedMenuItems(narrow.searchTerm);
       $timeout(function () {
@@ -51,7 +52,6 @@ function NarrowItDownController(MenuSearchService, $timeout) {
         }
       }, 2000);
     } else {
-      narrow.found.length = 0;
       narrow.message = "Nothing Found";
     }
   }
