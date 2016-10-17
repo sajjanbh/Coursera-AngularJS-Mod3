@@ -45,6 +45,7 @@ function NarrowItDownController(MenuSearchService, $timeout) {
       $timeout(function () {
         if (narrow.found.length > 0) {
           narrow.title = origTitle + " (" + narrow.found.length + " items )";
+          narrow.message = "";
         } else {
           narrow.message = "Nothing Found";
         }
